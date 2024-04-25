@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+header {
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+
+  border-bottom: 1px solid #3b3b3b;
+  border-left: 1px solid #3b3b3b;
+  border-right: 1px solid #3b3b3b;
+  border-radius: 0 0 10px 10px;
+  width: 100vw;
+  padding: 25px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #181818;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-link img {
+  width: 20px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-link {
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__primary {
+  background-color: white;
+  font-weight: 400;
+  font-size: 25px;
+  color: #3b3b3b;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.header-left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.header-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+/* Hero screen */
+
+.hero-screen {
+  background-image: url("assets/bgIMG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+  background-repeat: repeat;
+
+  margin: 20px;
+  border: 1px solid #3b3b3b;
+  border-radius: 11px;
+
+  padding: 80px;
+
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 68px;
+  color: #fff;
+}
+
+span {
+  color: #f5d6be;
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: right;
+  color: #fff;
+}
+
+
+
+.down-side div {
+  display: flex;
+  gap: 70px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.down-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Stonks */
+
+.stonks {
+  padding: 60px;
+  padding-top: 100px;
+}
+
+.stonks-title {
+  font-weight: 600;
+  font-size: 50px;
+  color: #fff;
+
+  margin-bottom: 60px;
+}
+
+.stonks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  justify-content: space-between;
+}
+
+.stonks-block {
+  background: #181818;
+  border: 1px solid #3b3b3b;
+  border-radius: 11px;
+  padding: 40px;
+
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30;
+}
+
+.stonks-block:nth-child(2) {
+  /* backdrop-filter: blur(100px);
+  background: rgba(24, 24, 24, 0.01); */
+
+  background: url("assets/lightBlur.png") no-repeat;
+  top: -2px;
+  left: -2px;
+}
+
+.stonks-block img {
+  width: 100px;
+  flex: 0;
+
+  margin-bottom: 70px;
+}
+
+.stonks-block h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155%;
+  color: #fff;
+  flex: 1;
+}
+
+.stonks-block p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 155%;
+  color: #fff;
+  flex: 1;
 }
