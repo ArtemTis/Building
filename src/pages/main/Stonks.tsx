@@ -3,10 +3,10 @@ import checked from "../../assets/checked.svg";
 import graph from "../../assets/graph.svg";
 import smileFace from "../../assets/smileFace.svg";
 
-const Stonks = () => {
+const Stonks:React.FC = () => {
     return (
-        <div className='stonks'>
-            <h2 className='stonks-title'>Почему строить дом с нами <span>выгодно</span>?</h2>
+        <div className='container stonks'>
+            <h2 className='section-title containder-title'>Почему строить дом с нами <span>выгодно</span>?</h2>
 
             <div className='stonks-container'>
 
