@@ -645,6 +645,17 @@ footer h5 {
 
 /* Plan */
 
+.plan-title {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 30px;
+
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
 .plan-container {
   background: url("assets/STEPS_BG.png") no-repeat center;
   width: 100%;
@@ -657,13 +668,56 @@ footer h5 {
   
 }
 
-.plan-title {
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 150%;
-  color: #fff;
-  margin-bottom: 30px;
+/* body{
+  border: 16px solid transparent;
+  border-image: linear-gradient(#FFFFFF , #0D0D0D);
+  border-image-slice: 1;
+  height: 120px;
+  border-radius: 10px;  
+} */
 
-  text-align: center;
-  margin: 50px 0 20px;
+.plan-step{
+  padding: 60px;
+  border: 1px solid transparent;
+  border-image: linear-gradient( #0d0d0d11, #FFFFFF );
+  border-image-slice: 1;
+
+  display: flex;
+  gap: 10px;
+}
+
+.plan-step2{
+  padding: 60px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(#FFFFFF , #0d0d0d11);
+  border-image-slice: 1;
+  border-top: none;
+
+  display: flex;
+  gap: 10px
+}
+
+.plan-step h2, .plan-step2 h2{
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 62%;
+  color: #fff;
+}
+
+.plan-step h4, .plan-step2 h4{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 103%;
+  color: #fff;
+}
+
+.plan-step-title{
+  display: flex;
+  gap: 10px;
+}
+
+.plan-step-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
