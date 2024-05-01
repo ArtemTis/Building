@@ -668,13 +668,6 @@ footer h5 {
   
 }
 
-/* body{
-  border: 16px solid transparent;
-  border-image: linear-gradient(#FFFFFF , #0D0D0D);
-  border-image-slice: 1;
-  height: 120px;
-  border-radius: 10px;  
-} */
 
 .plan-step{
   padding: 60px;
@@ -720,4 +713,14 @@ footer h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Adaptive */
+
+@media (max-width: 420px){
+/* @media (min-width: 631px) and (max-width: 1024px){ */
+  #first{
+      background-position-x: -341px;
+  }
+ 
 }
